@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "esnext",// 目标语言的版本
+    "module": "esnext",// 生成代码的模板标准
+    "useDefineForClassFields": true,// 是否使用define for class fields
+    "moduleResolution": "node",// 模块解析策略
+    "jsx": "preserve",// JSX代码生成方式
+    "sourceMap": true,// 是否生成sourceMap
+    "resolveJsonModule": true,// 是否解析json模块
+    "isolatedModules": true,// 是否将每个文件作为单独的模块
+    "esModuleInterop": true,// 是否启用对ES6模块的交互支持
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],// 编译过程中需要引入的库文件的列表
+    "skipLibCheck": true,// 是否跳过声明文件的类型检查
+    "noEmit": true,// 是否不生成输出文件，仅用于类型检查
+    "allowJs": true,// 是否允许编译js文件
+    "baseUrl": "./",// 解析非相对模块的基地址，默认是当前目录
+    "types": ["ant-design-vue/typings/global", "vite/client"],// 需要包含的类型声明文件名列表
+    "suppressImplicitAnyIndexErrors": true,// 是否禁用隐含的any声明索引错误
+    "importsNotUsedAsValues": "preserve",// 用于控制未使用的导入类型检查
+    "paths": {// 路径映射，相对于baseUrl
+      "ui-components": ["components/components"],// 配置模块路径映射
+    }
+  },
+  "exclude": ["node_modules", "lib", "es", "dist"]// 编译过程中需要排除的目录
+}

@@ -27,3 +27,4 @@ site/src/router/demoRoutes.js
 *.njsproj
 *.sln
 *.sw?
+/report.html

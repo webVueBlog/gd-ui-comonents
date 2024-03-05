@@ -1,0 +1,10 @@
+node_modules/
+dist/
+index.html
+.vscode
+.storybook
+.husky
+airbnb.md
+site
+components/*/**/demo/*.vue
+.eslintrc.js
